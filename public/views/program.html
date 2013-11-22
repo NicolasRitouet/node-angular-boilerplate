@@ -1,0 +1,22 @@
+<h1>Title 1</h1>
+<div class="row">
+	<form name="indexForm">
+    Product Search URL: <input type="url" name="url" ng-model="url" required class="form-control" />
+    <span class="error" ng-show="indexForm.url.$error.required"> Required!</span>
+    <span class="error" ng-show="indexForm.url.$error.url">
+		Not valid url!
+	</span>
+	<br>
+    Delta Import: <input type="checkbox" name="delta" ng-model="delta"  /><br />
+</form>
+</div>
+<div class="row">
+    <input type="button" ng-disabled="!indexForm.$valid" class="btn btn-primary btn-lg" value="Start Indexing" name="startIndex" ng-click="startIndex()" />
+</div>
+<div class="row">
+	Result: {{result}}
+</div>
+<hr/>
+<div class="row">
+	<input type="button" class="btn" value="Get Programs" name="getPrograms" ng-click="getPrograms()" /><br /><textarea>{{programs}}</textarea>
+</div>
