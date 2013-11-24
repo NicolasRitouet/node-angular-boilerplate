@@ -1,14 +1,30 @@
 {
   "name": "node-angular-boilerplate",
-  "version": "0.0.1",
-  "private": true,
+  "description" : "Boilerplate to start a project with angularJS and NodeJS.",
+  "version": "0.0.2",
+  "author": {
+    "name": "Nicolas Ritouet",
+    "email": "nicolas@ritouet.com",
+    "web": "http://nicolas.ritouet.com"
+  },
   "dependencies": {
     "express": "~3.2.6",
+    "socket.io": "~0.9.13",
+    "winston" : "~0.7.2",
    	"mysql":"2.0.0-alpha9"
-
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/NicolasRitouet/node-angular-boilerplate.git"
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.4.1",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-nodemon": "~0.1.2",
+    "grunt-concurrent": "~0.4.2",
+    "grunt": "~0.4.2"
+  },
+  "main": "./app",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/NicolasRitouet/node-angular-boilerplate.git"
   }
 }

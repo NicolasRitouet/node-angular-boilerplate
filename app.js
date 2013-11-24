@@ -8,7 +8,8 @@ var express = require('express'),
   api = require('./routes/api'),
   http = require('http'),
   path = require('path'),
-  os = require('os');
+  os = require('os'),
+  winston = require('winston');
 
 var app = module.exports = express();
 
