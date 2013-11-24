@@ -9,4 +9,7 @@ Deployement procedure
 
 TODO
 ----
-- Add grunt
+- Configure winston
+- Make a tiny example app with socket.io
+- Use request library (https://github.com/mikeal/request)
+- Remove useless libraries (mysql) in package.json and in code
